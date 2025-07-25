@@ -69,13 +69,13 @@
         <h1 class="noto font-bold text-2xl mb-4 lg:text-5xl">
           <span class="text-orange-600">Our</span> Plants
         </h1>
-        <p class="text-sm text-gray-500 inter mb-12 lg:text-2xl">
+        <p class="text-sm text-gray-500 inter lg:text-2xl">
           Fresh flowers, rich colors, and natural charm—discover your perfect
           bloom <br class="hidden lg:inline" />from our carefully curated
           collection.
         </p>
 
-        <div class="flower-card grid grid-cols-2 gap-y-10 mb-14 lg:grid-cols-4">
+        <div class="flower-card grid grid-cols-2 gap-y-10 ml-4 mt-10 mb-14 lg:grid-cols-4">
           <div class="card max-w-[250px] p-2.5 inter">
             <img src="images/Blue Rose.png" alt="blue rose" />
             <br />
@@ -83,7 +83,7 @@
             <p class="font-bold text-xl">17 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Blue Rose Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -96,7 +96,7 @@
             <p class="font-bold text-xl">15 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Red Rose Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -109,7 +109,7 @@
             <p class="font-bold text-xl">20 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
               onclick="alert('White Rose Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -122,7 +122,7 @@
             <p class="font-bold text-xl">25 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Yellow Rose Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -135,7 +135,7 @@
             <p class="font-bold text-xl">22 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Peonies Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -148,7 +148,7 @@
             <p class="font-bold text-xl">20 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Orchid Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -161,7 +161,7 @@
             <p class="font-bold text-xl">10 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Marigold Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -174,7 +174,7 @@
             <p class="font-bold text-xl">22 USD</p>
             <br />
             <button
-              class="bg-orange-400 text-white px-8 py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer lg:px-15"
+              class="bg-orange-400 text-white w-full py-2 duration-700 hover:bg-orange-600 hover:cursor-pointer"
               onclick="alert('Tuberose Added to Cart')"
             >
               <a href="#">ADD TO CART</a>
@@ -183,7 +183,7 @@
         </div>
         <a
           href="#"
-          class="text-sm text-gray-500 inter hover:text-orange-500 hover:border-b-2 border-orange-500 hover:font-semibold lg:text-lg"
+          class="text-base text-gray-500 inter hover:text-orange-500 hover:border-b-2 border-orange-500 hover:font-semibold lg:text-lg"
           >View more</a
         >
       </div>
@@ -244,7 +244,7 @@
                 class="w-full h-auto object-cover rounded-xl"
               />
               <div class="overlay rounded-xl"></div>
-              <div class="absolute top-20 left-20 z-10 lg:">
+              <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center">
                 <h5 class="noto text-xl text-white font-bold mb-2">
                   60% Off | Bloom Plant
                 </h5>
@@ -262,7 +262,7 @@
                 class="w-full h-auto rounded-xl object-cover"
               />
               <div class="overlay rounded-xl"></div>
-              <div class="absolute top-20 left-20 z-10">
+              <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center z-10">
                 <h5 class="noto text-xl text-white font-bold mb-2">
                   30% Off | Ana Plant
                 </h5>
@@ -281,7 +281,7 @@
               class="w-full h-auto rounded-xl object-cover"
             />
             <div class="overlay rounded-xl"></div>
-            <div class="absolute top-20 left-20 z-10 lg:top-50 lg:left-50">
+            <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center z-10">
               <h5 class="noto text-xl text-white font-bold mb-2 lg:text-4xl">
                 25% Off | Zabo Plant
               </h5>
