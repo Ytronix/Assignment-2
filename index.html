@@ -21,7 +21,7 @@
     <!--! Landing Page !-->
     <section id="Hero" class="mb-30">
       <!--? Navigation Bar ?-->
-      <header class="mb-30">
+      <header class="mb-16 mt-4 lg:mb-30">
         <nav class="nav-bar flex">
           <div class="brand">
             <img src="images/logo.png" alt="Faugei Flower Shop Logo" />
@@ -45,10 +45,10 @@
       <!--? Landing Banner ?-->
       <div class="banner flex">
         <div class="banner-content">
-          <h1 class="noto text-6xl font-semibold mb-5">
+          <h1 class="noto text-2xl font-semibold mb-5 lg:text-6xl">
             ALWAYS <span class="text-orange-600">FRESH <br />FLOWERS</span>
           </h1>
-          <p class="text-2xl text-gray-500 inter max-w-xl">
+          <p class="text-sm text-gray-500 inter max-w-xl lg:text-2xl">
             Enjoy nature’s finest with fresh, hand-picked blooms.. For big
             moments or everyday joy, our flowers add beauty and freshness to any
             space. Crafted with care, delivered with style.
@@ -66,17 +66,17 @@
     <!--! Plants !-->
     <section id="Plants" class="mb-52">
       <div class="plants-content">
-        <h1 class="noto font-bold text-5xl mb-4">
+        <h1 class="noto font-bold text-2xl mb-4 lg:text-5xl">
           <span class="text-orange-600">Our</span> Plants
         </h1>
-        <p class="text-2xl text-gray-500 inter mb-12">
+        <p class="text-sm text-gray-500 inter mb-12 lg:text-2xl">
           Fresh flowers, rich colors, and natural charm—discover your perfect
-          bloom <br />from our carefully curated collection.
+          bloom <br class="hidden lg:inline" />from our carefully curated collection.
         </p>
 
-        <div class="flower-card grid grid-cols-4 gap-y-10 mb-20">
+        <div class="flower-card grid grid-cols-2 gap-y-10 mb-20 lg:grid-cols-4 hidden">
           <div class="card w-2xs p-2.5 inter">
-            <img src="images/Blue Rose.png" alt="blue rose" />
+            <img src="images/Blue Rose.png" alt="blue rose" class="max-w-full"/>
             <br />
             <h4 class="font-medium text-xl">Blue Rose</h4>
             <p class="font-bold text-xl">17 USD</p>
@@ -182,20 +182,20 @@
         </div>
         <a
           href="#"
-          class="text-lg text-gray-500 inter hover:text-orange-500 hover:border-b-2 border-orange-500 hover:font-semibold"
+          class="text-sm text-gray-500 inter hover:text-orange-500 hover:border-b-2 border-orange-500 hover:font-semibold lg:text-lg"
           >View more</a
         >
       </div>
     </section>
     <!--! Certifications !-->
     <section id="Certifications" class="mb-36">
-      <div class="detail flex relative">
+      <div class="detail flex flex-col relative lg:flex-row">
         <img src="images/flower-store.png" alt="" class="max-w-full" />
-        <img src="images/trusted-badge.png" alt="" class="trusted-badge" />
+        <img src="images/trusted-badge.png" alt="" class="trusted-badge hidden lg:inline" />
         <div class="detail-content max-w-xl">
-          <h2 class="text-5xl font-bold noto">Flower & Plants<br />Lover</h2>
+          <h2 class="text-2xl font-bold noto lg:text-5xl">Flower & Plants<br class="hidden lg:inline" /> Lover</h2>
           <br />
-          <ul class="text-gray-500 text-2xl ml-8">
+          <ul class="text-gray-500 text-sm ml-4.5 lg:text-2xl">
             <li style="list-style: disc">
               Indulge your senses at our fresh flower shop, offering a wide
               variety from classic roses to exotic blooms.
@@ -218,15 +218,15 @@
     <!--! Latest Deals !-->
     <section id="Deals" class="mb-32">
       <div class="deals text-center">
-        <h2 class="text-5xl font-bold noto">
+        <h2 class="text-2xl font-bold noto lg:text-5xl">
           <span class="text-orange-600">Latest</span> Deals
         </h2>
         <br />
-        <p class="text-2xl text-gray-500 inter mb-30">
+        <p class="text-sm text-gray-500 inter mb-14 lg:mb-30 lg:text-2xl">
           Discover our freshly curated selections and limited-time offers.
-          Experience <br />exceptional floral beauty at unbeatable value.
+          Experience <br class="hidden lg:inline" />exceptional floral beauty at unbeatable value.
         </p>
-        <div class="deal-offers flex gap-6">
+        <div class="deal-offers flex flex-col gap-6 lg:flex-row">
           <div class="flex flex-col gap-6">
             <div class="bloom-card relative">
               <img
@@ -235,7 +235,7 @@
                 class="max-w-full rounded-xl object-cover"
               />
               <div class="overlay rounded-xl"></div>
-              <div class="absolute top-20 left-20 z-10">
+              <div class="absolute top-20 left-20 z-10 lg:">
                 <h5 class="noto text-xl text-white font-bold mb-2">
                   60% Off | Bloom Plant
                 </h5>
@@ -272,13 +272,13 @@
               class="max-w-full rounded-xl object-cover"
             />
             <div class="overlay rounded-xl"></div>
-            <div class="absolute top-50 left-50 z-10">
-              <h5 class="noto text-4xl text-white font-bold mb-2">
+            <div class="absolute top-20 left-20 z-10 lg:top-50 lg:left-50">
+              <h5 class="noto text-xl text-white font-bold mb-2 lg:text-4xl">
                 25% Off | Zabo Plant
               </h5>
               <a
                 href="#"
-                class="text-2xl text-white font-semibold inter border-b-2 duration-500"
+                class="text-base text-white font-semibold inter border-b-2 duration-500 lg:text-2xl"
                 >Shop Now</a
               >
             </div>
@@ -287,7 +287,7 @@
       </div>
     </section>
     <!--! Contact !-->
-    <section id="contact" class="mb-20">
+    <section id="contact" class="mb-20 hidden">
       <div class="pt-50">
         <h1 class="text-5xl font-bold text-center text-white noto mb-7">
           Get fresh floral updates.
@@ -303,7 +303,7 @@
       </div>
     </section>
     <!--! Footer !-->
-    <section id="footer" class="mb-20">
+    <section id="footer" class="mb-20 hidden">
       <footer class="flex align-baseline gap-40">
         <div class="logo">
           <img src="images/logo.png" alt="" class="mb-4" />

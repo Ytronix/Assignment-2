@@ -1,4 +1,4 @@
-@import "tailwindcss"
+@import "tailwindcss" 
 
 * {
   margin: 0;
@@ -64,6 +64,7 @@ body {
   margin: 0 auto;
 }
 .overlay {
+  max-width: 100%;
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -114,4 +115,26 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*! Mobile Responsiveness !*/
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .banner-content,
+  .plants-content p,
+  .detail,
+  .deals {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .nav-links ul {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .bloom-card .overlay,
+  .ana-card .overlay{
+    max-width: 99%;
 }
