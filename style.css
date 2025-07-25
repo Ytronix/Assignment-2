@@ -1,5 +1,6 @@
 @import "tailwindcss" 
 
+/*! Vanilla CSS !*/ 
 * {
   margin: 0;
   padding: 0;
@@ -57,14 +58,14 @@ body {
   left: 350px;
   top: -110px;
   z-index: 1;
-  animation: spin 7s linear infinite;
+  animation: spin 6s linear infinite;
 }
 .deals {
   max-width: 1200px;
   margin: 0 auto;
 }
 .overlay {
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -123,7 +124,8 @@ footer {
   .banner-content,
   .plants-content p,
   .detail,
-  .deals {
+  .deals,
+  footer {
     max-width: 90vw;
     margin: 0 auto;
   }
@@ -135,6 +137,16 @@ footer {
     gap: 30px;
   }
   .bloom-card .overlay,
-  .ana-card .overlay{
-    max-width: 99%;
+  .ana-card .overlay {
+    width: 100%;
+  }
+  #contact {
+    max-height: 276px;
+  }
+  .subscription {
+    max-width: 200px;
+  }
+  .social-links img {
+    filter: grayscale(0%);
+  }
 }
