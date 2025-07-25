@@ -59,6 +59,53 @@ body {
   z-index: 1;
   animation: spin 7s linear infinite;
 }
+.deals {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: ease-in-out 1s;
+}
+.bloom-card:hover .overlay,
+.ana-card:hover .overlay,
+.zabo-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+.bloom-card div > a:hover,
+.ana-card div > a:hover,
+.zabo-card div > a:hover {
+  color: orange;
+}
+#contact {
+  background-image: url(images/news-letter-bg.png);
+  width: 100vw;
+  height: 535px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.subscription {
+  width: 640px;
+  background: white;
+  padding: 10px 20px;
+  outline: none;
+}
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.social-links img {
+  filter: grayscale(100%);
+  transition: 0.8s;
+}
+.social-links img:hover {
+  filter: grayscale(0%);
+}
+
 /*! CSS Animation !*/
 @keyframes spin {
   from {
