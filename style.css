@@ -1,12 +1,12 @@
 @import "tailwindcss"
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ body{
 .nav-links {
   color: #8987a1;
 }
-.nav-links li:hover{
+.nav-links li:hover {
   color: black;
   font-weight: 600;
 }
@@ -43,4 +43,28 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+.detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.trusted-badge {
+  position: absolute;
+  max-width: 280px;
+  left: 350px;
+  top: -110px;
+  z-index: 1;
+  animation: spin 7s linear infinite;
+}
+/*! CSS Animation !*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
