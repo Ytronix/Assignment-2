@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--?? Tailwind Setup ??-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--?? Title ??-->
+    <title>Faugei Flower Shop</title>
+    <!--?? Google Fonts ??-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--?? CSS File ??-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--! Landing Page !-->
+    <section id="Hero" class="mb-30">
+      <!--? Navigation Bar ?-->
+      <header class="mb-30">
+        <nav class="nav-bar flex">
+          <div class="brand">
+            <img src="images/logo.png" alt="Faugei Flower Shop Logo" />
+          </div>
+          <div class="nav-links flex gap-17 align-middle">
+            <ul class="flex gap-15 inter">
+              <li class="w-15">
+                <a href="#" class="text-black font-bold">Home</a>
+              </li>
+              <li class="w-12"><a href="#">Shop</a></li>
+              <li class="w-18"><a href="#">About us</a></li>
+            </ul>
+            <div class="cart text-black">
+              <a href="#"
+                ><img src="images/cart.png" class="inline" /> Cart ($90)</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--? Landing Banner ?-->
+      <div class="banner flex">
+        <div class="banner-content">
+          <h1 class="noto text-6xl font-semibold mb-5">
+            ALWAYS <span class="text-orange-600">FRESH <br />FLOWERS</span>
+          </h1>
+          <p class="text-2xl text-gray-500 inter max-w-xl">
+            Enjoy nature’s finest with fresh, hand-picked blooms.. For big
+            moments or everyday joy, our flowers add beauty and freshness to any
+            space. Crafted with care, delivered with style.
+          </p>
+        </div>
+        <div class="banner-img">
+          <img
+            src="images/hero-flower.png"
+            alt="a pic of flower banquet"
+            class="max-w-full"
+          />
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>

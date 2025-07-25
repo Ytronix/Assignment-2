@@ -1,0 +1,41 @@
+@import "tailwindcss"
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/*? Shared Style ?*/
+.noto {
+  font-family: "Noto Serif", serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/*? Section Style ?*/
+.nav-bar {
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  color: #8987a1;
+}
+.nav-links li:hover{
+  color: black;
+  font-weight: 600;
+}
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
